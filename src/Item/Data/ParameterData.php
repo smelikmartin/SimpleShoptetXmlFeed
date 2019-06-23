@@ -28,7 +28,7 @@ class ParameterData
     /**
      * @param \SimpleShoptetXmlFeed\Item\Data\ParameterItemData $parameterItemData
      */
-    public function addParameter(ParameterItemData $parameterItemData): void
+    public function addParameter(ParameterItemData $parameterItemData)
     {
         $this->parameter->add($parameterItemData);
     }

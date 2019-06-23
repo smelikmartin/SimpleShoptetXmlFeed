@@ -28,7 +28,7 @@ class StockData
     /**
      * @param int $amount
      */
-    public function setAmount(int $amount): void
+    public function setAmount(int $amount)
     {
         $this->amount = $amount;
     }
@@ -36,7 +36,7 @@ class StockData
     /**
      * @param int $minimalAmount
      */
-    public function setMinimalAmount(int $minimalAmount): void
+    public function setMinimalAmount(int $minimalAmount)
     {
         $this->minimalAmount = $minimalAmount;
     }

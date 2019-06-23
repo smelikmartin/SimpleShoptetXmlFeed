@@ -37,7 +37,7 @@ class FlagsData
     /**
      * @param bool $action
      */
-    public function setAction(bool $action): void
+    public function setAction(bool $action)
     {
         $this->action = (int)$action;
     }
@@ -45,7 +45,7 @@ class FlagsData
     /**
      * @param bool $new
      */
-    public function setNew(bool $new): void
+    public function setNew(bool $new)
     {
         $this->new = (int)$new;
     }
@@ -53,7 +53,7 @@ class FlagsData
     /**
      * @param bool $tip
      */
-    public function setTip(bool $tip): void
+    public function setTip(bool $tip)
     {
         $this->tip = (int)$tip;
     }

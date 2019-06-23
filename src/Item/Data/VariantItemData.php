@@ -91,7 +91,7 @@ class VariantItemData
     /**
      * @param string $code
      */
-    public function setCode(string $code): void
+    public function setCode(string $code)
     {
         $this->code = $code;
     }
@@ -99,7 +99,7 @@ class VariantItemData
     /**
      * @param ParameterData $parameters
      */
-    public function setParameters(ParameterData $parameters): void
+    public function setParameters(ParameterData $parameters)
     {
         $this->parameters = $parameters;
     }
@@ -107,7 +107,7 @@ class VariantItemData
     /**
      * @param string $ean
      */
-    public function setEan(string $ean): void
+    public function setEan(string $ean)
     {
         $this->ean = $ean;
     }
@@ -115,7 +115,7 @@ class VariantItemData
     /**
      * @param string $currency
      */
-    public function setCurrency(string $currency): void
+    public function setCurrency(string $currency)
     {
         $this->currency = $currency;
     }
@@ -123,7 +123,7 @@ class VariantItemData
     /**
      * @param int $vat
      */
-    public function setVat(int $vat): void
+    public function setVat(int $vat)
     {
         $this->vat = $vat;
     }
@@ -131,7 +131,7 @@ class VariantItemData
     /**
      * @param float $price
      */
-    public function setPrice(float $price): void
+    public function setPrice(float $price)
     {
         $this->price = $price;
     }
@@ -139,7 +139,7 @@ class VariantItemData
     /**
      * @param float $purchasePrice
      */
-    public function setPurchasePrice(float $purchasePrice): void
+    public function setPurchasePrice(float $purchasePrice)
     {
         $this->purchasePrice = $purchasePrice;
     }
@@ -147,7 +147,7 @@ class VariantItemData
     /**
      * @param float $standardPrice
      */
-    public function setStandardPrice(float $standardPrice): void
+    public function setStandardPrice(float $standardPrice)
     {
         $this->standardPrice = $standardPrice;
     }
@@ -155,7 +155,7 @@ class VariantItemData
     /**
      * @param float $priceVat
      */
-    public function setPriceVat(float $priceVat): void
+    public function setPriceVat(float $priceVat)
     {
         $this->priceVat = $priceVat;
     }
@@ -163,7 +163,7 @@ class VariantItemData
     /**
      * @param string $availability
      */
-    public function setAvailability(string $availability): void
+    public function setAvailability(string $availability)
     {
         $this->availability = $availability;
     }

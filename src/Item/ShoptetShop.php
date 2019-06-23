@@ -20,7 +20,7 @@ class ShoptetShop
     /**
      * @param \SimpleShoptetXmlFeed\Item\ShoptetItem $item
      */
-    public function addItem(ShoptetItem $item): void
+    public function addItem(ShoptetItem $item)
     {
         $this->items[] = $item;
     }

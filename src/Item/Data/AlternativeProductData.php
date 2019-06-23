@@ -28,7 +28,7 @@ class AlternativeProductData
     /**
      * @param string $product
      */
-    public function addAlternativeProduct(string $product): void
+    public function addAlternativeProduct(string $product)
     {
         if (!$this->alternativeProducts->contains($product)) {
             $this->alternativeProducts->add($product);

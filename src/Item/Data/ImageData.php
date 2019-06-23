@@ -28,7 +28,7 @@ class ImageData
     /**
      * @param string $image
      */
-    public function addImage(string $image): void
+    public function addImage(string $image)
     {
         if (!$this->images->contains($image)) {
             $this->images->add($image);

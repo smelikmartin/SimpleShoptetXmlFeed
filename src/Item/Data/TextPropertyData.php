@@ -28,7 +28,7 @@ class TextPropertyData
     /**
      * @param \SimpleShoptetXmlFeed\Item\Data\TextPropertyItemData $textPropertyItemData
      */
-    public function addTextProperty(TextPropertyItemData $textPropertyItemData): void
+    public function addTextProperty(TextPropertyItemData $textPropertyItemData)
     {
         $this->textProperty->add($textPropertyItemData);
     }

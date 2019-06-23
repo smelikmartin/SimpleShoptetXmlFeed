@@ -28,7 +28,7 @@ class RelatedProductData
     /**
      * @param string $relatedProduct
      */
-    public function addRelatedProduct(string $relatedProduct): void
+    public function addRelatedProduct(string $relatedProduct)
     {
         if (!$this->relatedProducts->contains($relatedProduct)) {
             $this->relatedProducts->add($relatedProduct);

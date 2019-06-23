@@ -28,7 +28,7 @@ class VariantData
     /**
      * @param VariantItemData $variantItemData
      */
-    public function addVariant(VariantItemData $variantItemData): void
+    public function addVariant(VariantItemData $variantItemData)
     {
         $this->variant->add($variantItemData);
     }

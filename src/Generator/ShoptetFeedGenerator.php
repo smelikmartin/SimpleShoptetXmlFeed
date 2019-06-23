@@ -28,7 +28,7 @@ class ShoptetFeedGenerator
      * @param \SimpleShoptetXmlFeed\Item\ShoptetShop $shop
      * @param string $filePath
      */
-    public function generate(ShoptetShop $shop, string $filePath): void
+    public function generate(ShoptetShop $shop, string $filePath)
     {
         $xml = $this->serializerBuilder->serialize($shop, 'xml');
         file_put_contents($filePath, $xml, LOCK_EX);

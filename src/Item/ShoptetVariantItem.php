@@ -69,7 +69,7 @@ class ShoptetVariantItem
     /**
      * @param string $code
      */
-    public function setCode(string $code): void
+    public function setCode(string $code)
     {
         $this->code = $code;
     }
@@ -85,7 +85,7 @@ class ShoptetVariantItem
     /**
      * @param array $parameters
      */
-    public function addParameters(array $parameters): void
+    public function addParameters(array $parameters)
     {
         $this->parameters[] = $parameters;
     }
@@ -101,7 +101,7 @@ class ShoptetVariantItem
     /**
      * @param string $currency
      */
-    public function setCurrency(string $currency): void
+    public function setCurrency(string $currency)
     {
         $this->currency = $currency;
     }
@@ -117,7 +117,7 @@ class ShoptetVariantItem
     /**
      * @param string $vat
      */
-    public function setVat(string $vat): void
+    public function setVat(string $vat)
     {
         $this->vat = $vat;
     }
@@ -133,7 +133,7 @@ class ShoptetVariantItem
     /**
      * @param float $price
      */
-    public function setPrice(float $price): void
+    public function setPrice(float $price)
     {
         $this->price = $price;
     }
@@ -149,7 +149,7 @@ class ShoptetVariantItem
     /**
      * @param float $purchasePrice
      */
-    public function setPurchasePrice(float $purchasePrice): void
+    public function setPurchasePrice(float $purchasePrice)
     {
         $this->purchasePrice = $purchasePrice;
     }
@@ -165,7 +165,7 @@ class ShoptetVariantItem
     /**
      * @param float $standardPrice
      */
-    public function setStandardPrice(float $standardPrice): void
+    public function setStandardPrice(float $standardPrice)
     {
         $this->standardPrice = $standardPrice;
     }
@@ -181,7 +181,7 @@ class ShoptetVariantItem
     /**
      * @param float $priceVat
      */
-    public function setPriceVat(float $priceVat): void
+    public function setPriceVat(float $priceVat)
     {
         $this->priceVat = $priceVat;
     }
@@ -197,7 +197,7 @@ class ShoptetVariantItem
     /**
      * @param string $availability
      */
-    public function setAvailability(string $availability): void
+    public function setAvailability(string $availability)
     {
         $this->availability = $availability;
     }
@@ -213,7 +213,7 @@ class ShoptetVariantItem
     /**
      * @param string $ean
      */
-    public function setEan(string $ean): void
+    public function setEan(string $ean)
     {
         $this->ean = $ean;
     }

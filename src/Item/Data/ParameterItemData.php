@@ -27,7 +27,7 @@ class ParameterItemData
     /**
      * @param string $name
      */
-    public function setName(string $name): void
+    public function setName(string $name)
     {
         $this->name = $name;
     }
@@ -35,7 +35,7 @@ class ParameterItemData
     /**
      * @param string $value
      */
-    public function setValue(string $value): void
+    public function setValue(string $value)
     {
         $this->value = $value;
     }

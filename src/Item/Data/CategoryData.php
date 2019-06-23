@@ -28,7 +28,7 @@ class CategoryData
     /**
      * @param string $category
      */
-    public function addCategory(string $category): void
+    public function addCategory(string $category)
     {
         if (!$this->category->contains($category)) {
             $this->category->add($category);
