@@ -41,6 +41,11 @@ class ShoptetVariantItem
     /**
      * @var float
      */
+    private $purchasePriceWithoutVat;
+
+    /**
+     * @var float
+     */
     private $standardPrice;
 
     /**
@@ -157,6 +162,22 @@ class ShoptetVariantItem
     /**
      * @return float
      */
+    public function getPurchasePriceWithoutVat(): float
+    {
+        return $this->purchasePriceWithoutVat;
+    }
+
+    /**
+     * @param float $purchasePriceWithoutVat
+     */
+    public function setPurchasePriceWithoutVat(float $purchasePriceWithoutVat)
+    {
+        $this->purchasePriceWithoutVat = $purchasePriceWithoutVat;
+    }
+
+    /**
+     * @return float
+     */
     public function getStandardPrice(): float
     {
         return $this->standardPrice;
@@ -232,6 +253,10 @@ class ShoptetVariantItem
 
         if ($this->getPurchasePrice() !== null) {
             $data['PURCHASE_PRICE'] = $this->getPurchasePrice();
+        }
+
+        if ($this->getPurchasePriceWithoutVat() !== null) {
+            $data['PURCHASE_PRICE_WITHOUT_VAT'] = $this->getPurchasePriceWithoutVat();
         }
 
         if ($this->getStandardPrice() !== null) {
