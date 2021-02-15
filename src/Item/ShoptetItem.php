@@ -156,6 +156,14 @@ class ShoptetItem
     /**
      * @var float
      * @Serializer\Type("float")
+     * @Serializer\SerializedName("PURCHASE_PRICE_WITHOUT_VAT")
+     * @Serializer\SkipWhenEmpty()
+     */
+    private $purchasePriceWithoutVat;
+
+    /**
+     * @var float
+     * @Serializer\Type("float")
      * @Serializer\SerializedName("PRICE_VAT")
      * @Serializer\SkipWhenEmpty()
      */
@@ -350,6 +358,14 @@ class ShoptetItem
     public function setPurchasePrice(float $purchasePrice)
     {
         $this->purchasePrice = $purchasePrice;
+    }
+
+    /**
+     * @param float $purchasePriceWithoutVat
+     */
+    public function setPurchasePriceWithoutVat(float $purchasePriceWithoutVat)
+    {
+        $this->purchasePriceWithoutVat = $purchasePriceWithoutVat;
     }
 
     /**
