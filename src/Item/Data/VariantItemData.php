@@ -68,6 +68,14 @@ class VariantItemData
     /**
      * @var float
      * @Serializer\Type("float")
+     * @Serializer\SerializedName("PURCHASE_PRICE_WITHOUT_VAT")
+     * @Serializer\SkipWhenEmpty()
+     */
+    private $purchasePriceWithoutVat;
+
+    /**
+     * @var float
+     * @Serializer\Type("float")
      * @Serializer\SerializedName("STANDARD_PRICE")
      * @Serializer\SkipWhenEmpty()
      */
@@ -142,6 +150,14 @@ class VariantItemData
     public function setPurchasePrice(float $purchasePrice)
     {
         $this->purchasePrice = $purchasePrice;
+    }
+
+    /**
+     * @param float $purchasePriceWithoutVat
+     */
+    public function setPurchasePriceWithoutVat(float $purchasePriceWithoutVat)
+    {
+        $this->purchasePriceWithoutVat = $purchasePriceWithoutVat;
     }
 
     /**
