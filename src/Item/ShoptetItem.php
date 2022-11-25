@@ -68,6 +68,14 @@ class ShoptetItem
     /**
      * @var string
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("DEFAULT_CATEGORY")
+     * @Serializer\SkipWhenEmpty()
+     */
+    private $defaultCategory;
+
+    /**
+     * @var string
+     * @Serializer\Type("string")
      * @Serializer\SerializedName("ITEM_TYPE")
      * @Serializer\SkipWhenEmpty()
      */
@@ -430,5 +438,13 @@ class ShoptetItem
     public function setVariants(VariantData $variants)
     {
         $this->variants = $variants;
+    }
+
+    /**
+     * @param string $defaultCategory
+     */
+    public function setDefaultCategory(string $defaultCategory)
+    {
+        $this->defaultCategory = $defaultCategory;
     }
 }
